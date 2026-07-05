@@ -109,7 +109,7 @@ nav a:hover { color: #d4af37; }
     transition: 0.3s;
 }
 .partner.canopy {
-    color: #55d66b; /* Зеленый цвет Canopy */
+    color: #55d66b;
     border-color: rgba(85, 214, 107, 0.3);
     box-shadow: 0 0 25px rgba(85, 214, 107, 0.08);
 }
@@ -120,7 +120,7 @@ nav a:hover { color: #d4af37; }
     box-shadow: 0 0 40px rgba(85, 214, 107, 0.2);
 }
 
-/* === КАК КУПИТЬ (3 ШАГА) === */
+/* === КАК КУПИТЬ (2 ШАГА) === */
 .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; margin-top: 20px; }
 .step-card {
     background: rgba(255,255,255,0.03); padding: 30px; border-radius: 20px; text-align: center;
