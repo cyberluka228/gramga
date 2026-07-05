@@ -28,7 +28,7 @@ nav a:hover { color: #d4af37; }
 }
 .btn-audit:hover { background: #d4af37; color: #08080a !important; }
 
-/* === ГЛАВНАЯ (ЛОГОТИП НА ФОНЕ) === */
+/* === ГЛАВНАЯ === */
 .hero {
     min-height: 85vh; display: flex; align-items: center; text-align: center;
     position: relative; overflow: hidden;
@@ -38,7 +38,7 @@ nav a:hover { color: #d4af37; }
     position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
     width: 90vw; height: 90vw; max-width: 900px; max-height: 900px;
     background-image: url('logo.png'); background-size: contain; background-position: center; background-repeat: no-repeat;
-    opacity: 0.15; /* Сделал чуть ярче, чтобы не было темно */
+    opacity: 0.18; /* Чуть ярче, красивее */
     pointer-events: none; z-index: 0;
 }
 .hero .container { position: relative; z-index: 1; }
@@ -55,15 +55,15 @@ nav a:hover { color: #d4af37; }
 }
 .buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px; }
 
-/* Кнопки */
+/* Кнопки (теперь это ссылки) */
 .btn-gold {
     background: linear-gradient(135deg, #d4af37, #b8860b); color: #08080a; border: none;
     padding: 14px 36px; border-radius: 50px; font-weight: 600; cursor: pointer; font-size: 1rem;
     box-shadow: 0 8px 30px rgba(212,175,55,0.3); transition: 0.3s;
+    text-decoration: none; display: inline-block;
 }
 .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(212,175,55,0.5); }
 
-/* Ссылка под кнопку (Launch App) */
 .btn-glass {
     background: rgba(255,255,255,0.05); color: #fff; border: 1px solid #333; backdrop-filter: blur(4px);
     padding: 14px 36px; border-radius: 50px; font-weight: 600; cursor: pointer; font-size: 1rem; transition: 0.3s;
@@ -121,7 +121,9 @@ footer p { color: #555; font-size: 0.85rem; }
     nav a { margin-left: 14px; font-size: 0.85rem; }
     .btn-audit { padding: 4px 12px; font-size: 0.75rem; }
     .hero h1 { font-size: 3.2rem; }
-    .hero-bg { opacity: 0.2; } /* На телефонах логотип будет виден лучше */
+    .hero-bg { opacity: 0.25; } /* Ещё ярче на телефонах */
     .stats { flex-direction: column; gap: 6px; }
     h2 { font-size: 2rem; }
+    .buttons { gap: 12px; }
+    .btn-gold, .btn-glass { padding: 12px 24px; font-size: 0.9rem; }
 }
