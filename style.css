@@ -15,11 +15,10 @@ h2 span, .gold { color: #d4af37; }
 
 /* === ШАПКА === */
 header {
-    display: flex; justify-content: space-between; align-items: center;
+    display: flex; justify-content: flex-end; align-items: center;
     padding: 16px 30px; background: rgba(8,8,10,0.8); backdrop-filter: blur(10px);
     position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(212,175,55,0.1);
 }
-.logo img { height: 36px; width: auto; display: block; object-fit: contain; }
 nav a {
     color: #aaa; text-decoration: none; margin-left: 24px; font-weight: 500; transition: 0.3s;
 }
@@ -29,11 +28,19 @@ nav a:hover { color: #d4af37; }
 }
 .btn-audit:hover { background: #d4af37; color: #08080a !important; }
 
-/* === ГЛАВНАЯ === */
+/* === ГЛАВНАЯ (ЛОГОТИП НА ФОНЕ) === */
 .hero {
     min-height: 85vh; display: flex; align-items: center; text-align: center;
+    position: relative; overflow: hidden;
     background: radial-gradient(circle at 30% 50%, #1a1508, #08080a 70%);
 }
+.hero-bg {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 90vw; height: 90vw; max-width: 900px; max-height: 900px;
+    background-image: url('logo.png'); background-size: contain; background-position: center; background-repeat: no-repeat;
+    opacity: 0.06; pointer-events: none; z-index: 0;
+}
+.hero .container { position: relative; z-index: 1; }
 .hero h1 {
     font-family: 'Orbitron', sans-serif; font-size: 5rem; font-weight: 900;
     background: linear-gradient(135deg, #fce68b, #d4af37, #b8860b);
@@ -96,18 +103,18 @@ nav a:hover { color: #d4af37; }
 
 /* === ПОДВАЛ === */
 footer { background: #0a0a0c; border-top: 1px solid rgba(255,255,255,0.04); padding: 40px 0; text-align: center; }
-.footer-logo { height: 35px; margin-bottom: 16px; }
 .links { display: flex; gap: 24px; justify-content: center; margin: 12px 0 20px; }
 .links a { color: #888; text-decoration: none; transition: 0.3s; }
 .links a:hover { color: #d4af37; }
 footer p { color: #555; font-size: 0.85rem; }
 
-/* === АДАПТИВ (МОБИЛЬНЫЕ) === */
+/* === АДАПТИВ === */
 @media (max-width: 700px) {
-    header { flex-direction: row; padding: 14px 20px; }
+    header { padding: 14px 20px; }
     nav a { margin-left: 14px; font-size: 0.85rem; }
     .btn-audit { padding: 4px 12px; font-size: 0.75rem; }
     .hero h1 { font-size: 3.2rem; }
+    .hero-bg { opacity: 0.1; } /* На телефонах делаем фон чуть ярче, чтобы было видно */
     .stats { flex-direction: column; gap: 6px; }
     h2 { font-size: 2rem; }
 }
