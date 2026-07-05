@@ -1,0 +1,7 @@
+body{margin:0;font-family:Arial,sans-serif;background:#090909;color:#fff}
+header{display:flex;justify-content:space-between;padding:20px;background:#111;position:sticky;top:0}
+a{color:#d4af37;text-decoration:none;margin:0 10px}
+.hero{padding:100px 20px;text-align:center;background:linear-gradient(#111,#000)}
+button{background:#d4af37;border:0;padding:12px 24px;border-radius:8px;font-weight:bold}
+section{max-width:900px;margin:auto;padding:60px 20px}
+h1,h2{color:#d4af37}footer{text-align:center;padding:30px;background:#111}
