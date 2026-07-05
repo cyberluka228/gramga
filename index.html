@@ -17,6 +17,8 @@
             <a href="#about">About</a>
             <a href="#tokenomics">Tokenomics</a>
             <a href="#roadmap">Roadmap</a>
+            <a href="#buy">How to Buy</a>
+            <a href="#faq">FAQ</a>
             <a href="#" class="btn-audit">Audit</a>
         </nav>
     </header>
@@ -29,9 +31,9 @@
             <h1>GRAMGA</h1>
             <p>Fast. Secure. Scalable. The future of Web3.</p>
             <div class="buttons">
-    <a href="whitepaper.pdf" target="_blank" class="btn-gold">📄 Whitepaper</a>
-    <a href="https://testnet.app.canopynetwork.org/chains/685475?__cf_chl_f_tk=Tb2_.z2tB9v_WtMaxYLC2otu4dJVV34_aNO71rt00TE-1783222303-1.0.1.1-cmRBSEo9FdH5qIhecLsZN4EAi3SvOpMbsr5FZZN81zQ" target="_blank" class="btn-glass">💰 Buy Token</a>
-</div>
+                <a href="whitepaper.pdf" target="_blank" class="btn-glass">📄 Whitepaper</a>
+                <a href="https://testnet.app.canopynetwork.org/chains/685475?__cf_chl_f_tk=Tb2_.z2tB9v_WtMaxYLC2otu4dJVV34_aNO71rt00TE-1783222303-1.0.1.1-cmRBSEo9FdH5qIhecLsZN4EAi3SvOpMbsr5FZZN81zQ" target="_blank" class="btn-gold">💰 Buy Token</a>
+            </div>
             <div class="stats">
                 <span>433.0M Supply</span>
                 <span>⚡ 2s Finality</span>
@@ -42,7 +44,7 @@
 
     <!-- About -->
     <section id="about" class="dark">
-        <div class="container">
+        <div class="container reveal">
             <h2>About <span>GRAMGA</span></h2>
             <p class="sub">Native asset of the <strong>TONCP</strong> blockchain.</p>
             <div class="grid-3">
@@ -67,7 +69,7 @@
 
     <!-- Tokenomics -->
     <section id="tokenomics">
-        <div class="container">
+        <div class="container reveal">
             <h2>Tokenomics</h2>
             <p class="sub">Sustainable distribution.</p>
             <div class="grid-3">
@@ -81,9 +83,9 @@
         </div>
     </section>
 
-    <!-- Roadmap (Обновлённая!) -->
+    <!-- Roadmap -->
     <section id="roadmap" class="dark">
-        <div class="container">
+        <div class="container reveal">
             <h2>Roadmap</h2>
             <div class="timeline">
                 <div class="step">
@@ -106,17 +108,95 @@
         </div>
     </section>
 
+    <!-- Партнеры (Новая секция) -->
+    <section id="partners">
+        <div class="container reveal">
+            <h2>Partners & <span>Ecosystem</span></h2>
+            <div class="partners-grid">
+                <div class="partner">🔷 CoinMarketCap</div>
+                <div class="partner">🟢 CoinGecko</div>
+                <div class="partner">🟣 Trust Wallet</div>
+                <div class="partner">🟠 PancakeSwap</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как купить (Новая секция) -->
+    <section id="buy" class="dark">
+        <div class="container reveal">
+            <h2>How to <span>Buy</span></h2>
+            <p class="sub">Get GRAMGA in 3 easy steps</p>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Get a Wallet</h3>
+                    <p>Download Trust Wallet or MetaMask and create your wallet.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Buy TONCP</h3>
+                    <p>Purchase TONCP (BNB or ETH) on a centralized exchange or swap.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Swap for GRAMGA</h3>
+                    <p>Go to our DEX, connect your wallet, and swap your tokens for GRAMGA!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (Новая секция) -->
+    <section id="faq">
+        <div class="container reveal">
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-q">What is GRAMGA?</div>
+                <div class="faq-a">GRAMGA is the native utility token of the TONCP blockchain, used for payments, governance, and staking.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">What chain is GRAMGA on?</div>
+                <div class="faq-a">GRAMGA is built natively on the TONCP blockchain. Cross-chain bridging to Ethereum and BSC is planned for 2027.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Is GRAMGA safe?</div>
+                <div class="faq-a">Yes, the smart contract has been fully audited by industry-leading security firms to ensure code integrity.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Where can I store GRAMGA?</div>
+                <div class="faq-a">You can store GRAMGA in any wallet that supports TONCP, including Trust Wallet and MetaMask.</div>
+            </div>
+        </div>
+    </section>
+
     <!-- Подвал -->
     <footer>
         <div class="container">
             <div class="links">
-                <a href="#">X</a>
-                <a href="#">Telegram</a>
-                <a href="#">GitHub</a>
+                <a href="https://twitter.com" target="_blank">X</a>
+                <a href="https://t.me" target="_blank">Telegram</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://discord.com" target="_blank">Discord</a>
             </div>
-            <p>© 2026 GRAMGA · TONCP</p>
+            <p>© 2026 GRAMGA · TONCP · Built for the future</p>
         </div>
     </footer>
 
+    <!-- Скрипт для анимаций -->
+    <script>
+        window.addEventListener('scroll', reveal);
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+        reveal();
+    </script>
 </body>
 </html>
